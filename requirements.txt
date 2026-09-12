@@ -1,0 +1,84 @@
+# ======================
+# 功能依赖
+# ======================
+python-docx>=1.2.0
+python-pptx>=1.0.2
+modelscope>=1.37.1
+milvus_model>=0.2.10
+milvus>=2.3.8
+sentence_transformers>=5.6.0
+
+# ======================
+# 工具与工具链
+# ======================
+numpy==2.2.6        # 数值计算
+
+# ======================
+# 开发环境依赖（可选）
+# ======================
+# black==23.11.0      # 代码格式化
+# pytest==7.4.3       # 测试框架
+
+# ---------- LangChain核心框架 ----------
+langchain>=1.3.10
+langchain-core>=1.2
+langchain-openai>=1.1,<2
+openai>=1.0,<3
+python-dotenv>=1.0
+pydantic>=2.7,<3
+httpx>=0.27
+# ---------- 社区与厂商集成 ----------
+langchain-community>=0.3
+langchain-deepseek>=0.1
+langchain-ollama>=0.2
+
+
+# ---------- 记忆与对话历史 ----------
+redis>=7.4.1
+
+# ---------- 向量库 Redis ----------
+langchain-redis>=0.2
+
+# ---------- RAG 文档加载----------
+pypdf>=4.0
+unstructured>=0.10
+python-docx>=1.0
+docx2txt>=0.8
+markdown>=3.4
+jq>=1.6
+
+# ---------- RAG 文本分割 ----------
+langchain-unstructured>=1.0
+
+# ---------- LangGraph ----------
+
+langgraph>=1.0,<2
+# SQLite 检查点
+langgraph-checkpoint-sqlite>=2.0,<4
+
+
+# ---------- 代码格式（可选，用于统一 .py 风格） ----------
+black>=24.0
+
+#-------------FastAPI接口------------
+fastapi>=0.115.0
+uvicorn>=0.30.6
+
+#-------------前端streamlit------------
+streamlit>=1.58.0
+
+#---------中文分词---------
+jieba==0.42.1
+
+#----------mysql
+pymysql>=1.2.0
+#----------milvus
+pymilvus>=3.0.1
+pymilvus_model>=0.3.2
+FlagEmbedding>=1.4.2
+#----------modelscope
+simplejson>=4.1.2
+sortedcontainers>=2.4.0
+#----------BM25
+rank-bm25>=0.2.2
+

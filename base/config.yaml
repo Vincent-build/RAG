@@ -1,0 +1,85 @@
+mysql:
+  host: localhost
+  port: 3306
+  user: root
+  password: 1234
+  database: multi_rag_mysql_db
+  table_name: jpkb
+
+redis:
+  host: localhost
+  port: 26379
+  password: ""
+  db: 0
+  index_name: "question"
+
+milvus:
+  host: localhost
+  port: 19530
+  database_name: multi_rag_milvus_db
+  collection_name: multi_rag_vectors
+
+llm:
+  embed_model: qwen3.7-text-embedding
+  chat_model: qwen3.8-max
+  api_key: sk-xxx
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+  temperature: 0.6
+
+ollama:
+  model: "qwen3.5:9b"
+  embedding_model: "embeddinggemma"
+
+
+retrieval:
+  parent_chunk_size: 1200
+  child_chunk_size: 300
+  chunk_overlap: 50
+  retrieval_k: 5
+  candidate_m: 2
+
+
+logger:
+  log_file: logs/app.log
+
+app:
+  valid_sources: ['ai','java','test','ops','bigdata']
+  customer_service_phone: 12345678
+
+syspath:
+  bge_m3: "/Users/"
+  bge_rerank_large: "/Users/"
+  databases: "/Users/"
+  bge_large_zh: "/Users/"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
